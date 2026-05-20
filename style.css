@@ -1,0 +1,566 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --accent: #ddb89f;
+  --accent-dark: #c99b7c;
+  --text: #696969;
+  --line: #ead3c4;
+  --bg: #fffaf7;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 300;
+}
+.page {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  background: #fffdfa;
+  overflow: hidden;
+}
+.section {
+  /* padding: 0px 18px; */
+  text-align: center;
+}
+.titleFirst {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 60px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.textFirst {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 124%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 auto 25px;
+  max-width: 358px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  line-height: 1;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 52px;
+}
+p {
+  /* margin: 0 auto 20px; */
+  /* max-width: 360px; */
+  font-size: 14px;
+  line-height: 1.35;
+}
+.hero {
+  /* padding-top: 86px; */
+  position: relative;
+}
+/* .hero:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 78px;
+  opacity: 0.45;
+  background:
+    radial-gradient(
+      ellipse at 12% 20%,
+      transparent 35%,
+      var(--line) 36%,
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 88% 20%,
+      transparent 35%,
+      var(--line) 36%,
+      transparent 38%
+    );
+} */
+.couple-photo {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  /* margin: 22px auto 24px; */
+  padding: 0 16px;
+  object-fit: cover;
+}
+.divider {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  /* width: 210px;
+  height: 34px;
+  margin: 0 auto;
+  opacity: 0.75;
+  background:
+    linear-gradient(20deg, transparent 45%, var(--accent) 46%, transparent 48%)
+      left 10px center/60px 18px no-repeat,
+    linear-gradient(-20deg, transparent 45%, var(--accent) 46%, transparent 48%)
+      right 10px center/60px 18px no-repeat,
+    radial-gradient(
+        ellipse at center,
+        transparent 48%,
+        var(--accent) 49%,
+        transparent 51%
+      )
+      center/80px 22px no-repeat; */
+}
+.dateHeader {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 60px;
+  leading-trim: NONE;
+  line-height: 71px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.month {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 18px 10px;
+  max-width: 358px;
+  margin: 0 auto;
+  align-items: center;
+}
+.calendar span {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #d6b49b;
+}
+.calendar i {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.heart {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.heart:before {
+  content: "";
+  position: absolute;
+  width: 92px;
+  height: 45px;
+  /* background: var(--accent); */
+  /* border-radius: 50%; */
+  z-index: -1;
+  left: -24px;
+  top: -6px;
+  background-image: url(assets/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.timing {
+  position: relative;
+  margin: 60px 16px 57px;
+  padding: 32px 28px 18px;
+  border-radius: 28px;
+  background: var(--accent);
+  color: #fff;
+  overflow: hidden;
+}
+
+.timing h2 {
+  margin: 0 0 28px;
+  font-family: "Florisel", cursive;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 27px;
+  padding-bottom: 28px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: -9px;
+  bottom: 21px;
+  width: 1px;
+  background: #fff;
+}
+
+.timeline div {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline div:last-of-type {
+  width: 190px;
+  margin-bottom: 0;
+}
+
+.timeline div::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline b {
+  display: block;
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 50px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 43px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.timeline small {
+  display: block;
+  /* margin-top: 5px; */
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  color: #fff;
+}
+
+.timeline img {
+  position: absolute;
+  right: -8px;
+  bottom: -9px;
+  width: 112px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.titleLocatin {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 60px;
+  leading-trim: NONE;
+  line-height: 68px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.locationText {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 117%;
+  letter-spacing: 1%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  padding: 13px 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 358px;
+  text-align: center;
+  margin: 19px auto 0px auto;
+}
+.titleForm {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 60px;
+  leading-trim: NONE;
+  line-height: 71px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.textForm {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 117%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 358px;
+  margin: 0 auto;
+}
+.rsvp p {
+  margin-bottom: 18px;
+}
+form {
+  text-align: left;
+  font-size: 14px;
+  max-width: 358px;
+  margin: 0 auto;
+}
+.label {
+  display: block;
+  margin: 18px 0 10px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18.5px;
+  leading-trim: NONE;
+  line-height: 149%;
+  letter-spacing: 0%;
+}
+.label small {
+  display: block;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+textarea {
+  width: 100%;
+  min-height: 112px;
+  padding: 14px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: transparent;
+  color: #cdab92;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  outline: none;
+
+  resize: vertical;
+}
+textarea::placeholder {
+  color: #cdab92;
+}
+form label:not(.label) {
+  display: block;
+  margin: 21px 0;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+  accent-color: var(--accent);
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid #7d7d7d;
+  border-radius: 3px;
+
+  background: transparent;
+
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  position: absolute;
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -58%);
+}
+.submit {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 55px;
+}
+.hidden {
+  display: none;
+}
+.success {
+  display: none;
+  margin-top: 14px;
+  text-align: center;
+  color: var(--accent-dark);
+  font-weight: 500;
+}
+.final {
+  padding-bottom: 36px;
+}
+.contacts-title {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 52px;
+  leading-trim: NONE;
+  line-height: 71px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: -3px;
+}
+a {
+  color: inherit;
+}
+.titleFinish {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 52px;
+  leading-trim: NONE;
+  line-height: 71px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.textFinal {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 115%;
+  letter-spacing: 1%;
+  text-align: center;
+  max-width: 358px;
+  margin: 0 auto;
+}
+.textContacts {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.phone {
+  display: block;
+  margin-top: 21px;
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2,
+  .timing h2 {
+    font-size: 46px;
+  }
+  .calendar {
+    gap: 16px 6px;
+  }
+}
