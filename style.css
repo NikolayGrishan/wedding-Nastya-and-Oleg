@@ -249,7 +249,7 @@ p {
   content: "";
   position: absolute;
   left: -33px;
-  top: 10px;
+  top: 0px;
   width: 12px;
   height: 12px;
   border: 1px solid #fff;
@@ -551,6 +551,40 @@ a {
 .phone {
   display: block;
   margin-top: 21px;
+}
+.timingTime {
+  font-family: "Florisel", cursive;
+  font-weight: 100;
+  font-style: Thin;
+  font-size: 50px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 37px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #fff;
+  margin: 0;
+}
+.timingHeading {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin: 0px 0px 15px 0px;
+}
+.timingText {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin: 0;
 }
 @media (max-width: 360px) {
   h1 {
